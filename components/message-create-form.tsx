@@ -6,11 +6,8 @@ import { useFormState } from 'react-dom';
 import { FieldError } from '@/components/errors/field-error';
 import { useToastMessage } from '@/hooks/use-toast-message';
 import { useFormReset } from '@/hooks/use-form-reset';
-import { useState } from 'react';
-import { DatePicker } from './date-picker';
 
 export const MessageCreateForm = () => {
-    const [date, setDate] = useState<Date>(new Date())
 
     const [formState, formAction] = useFormState(
         createMessage,

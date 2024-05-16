@@ -9,8 +9,3 @@ export type FieldErrorProps = {
     formState: FormState;
     name: string;
 };
-
-export type DatePickerProps = {
-    date: Date;
-    setDate: (date: Date) => void;
-};
